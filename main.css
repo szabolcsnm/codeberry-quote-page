@@ -7,6 +7,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     color: #333;
+    position: relative;
 }
 
 .wrapper {
@@ -14,18 +15,106 @@ body {
     margin: 0 auto;
     text-align: center;
     line-height: 1.5;
-    padding-top: 4rem;
+    padding-top: 6rem;
 }
 
 .quote {
     text-transform: uppercase;
     font-family: "Julius Sans One", sans-serif;
-    font-size: 2.4rem;
+    font-size: 1.2rem;
 }
 
 .author {
     padding-top: 1rem;
     font-family: "Crimson Text", serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-style: italic;
+}
+
+/* select language */
+.language {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 17rem;
+}
+
+.language ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.language ul li {
+    font-size: 1.1rem;
+    width: 29%;
+}
+
+.language ul li a {
+    display: block;
+    text-decoration: none;
+    line-height: normal;
+    color: rgb(206, 206, 206);
+    font-family: "Crimson Text", serif;
+    font-size: 0.9rem;
+    background-color: rgba(51, 51, 51, 0.9);
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 0 0.6rem;
+    transition: 0.3s all ease;
+}
+
+.language ul li a:hover {
+    color: rgb(51, 51, 51);
+    background-color: rgb(206, 206, 206);
+}
+
+@media (min-width: 600px) {
+    .wrapper {
+        padding-top: 7rem;
+    }
+    .quote {
+        font-size: 1.6rem;
+    }
+    .author {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .wrapper {
+        padding-top: 4rem;
+    }
+    .quote {
+        font-size: 2rem;
+    }
+    .author {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrapper {
+        padding-top: 6rem;
+    }
+    .quote {
+        font-size: 2.2rem;
+    }
+    .author {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    .wrapper {
+        padding-top: 14rem;
+    }
+    .quote {
+        font-size: 2.8rem;
+    }
+    .author {
+        font-size: 1.8rem;
+    }
 }
